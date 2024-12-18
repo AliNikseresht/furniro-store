@@ -3,7 +3,7 @@
 import React from "react";
 import HeadOfPages from "../components/ui/HeadOfPages";
 import { useAppSelector } from "@/store/store";
-import Input from "../components/ui/Input";
+import Input from "../components/ui/forms/Input";
 import { SubmitHandler, useForm } from "react-hook-form";
 
 type FormValues = {

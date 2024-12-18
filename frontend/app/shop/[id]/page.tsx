@@ -11,7 +11,7 @@ import LinkedinIcon from "@/app/components/icons/LinkedinIcon";
 import TwitterIcon from "@/app/components/icons/TwitterIcon";
 import ProductsItems from "@/app/components/ui/ProductsItems";
 import Link from "next/link";
-import Tabs from "@/app/components/ui/Tabs";
+import Tabs from "@/app/components/ui/tabs/Tabs";
 import { useAppSelector } from "@/store/store";
 
 const ProductPage = () => {

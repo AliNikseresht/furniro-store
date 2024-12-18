@@ -31,22 +31,30 @@ export const layoutData: TLayoutData = {
     {
       key: "user",
       icon: <UserIcon />,
-      modal: [{ button: "" }],
+      links: [{ href: "/login" }],
     },
     {
       key: "search",
       icon: <SearchIcon />,
-      modal: [{ button: "" }],
+      modal: {
+        type: "search",
+        buttons: [{ action: () => console.log("Search modal action") }],
+      },
+      links: [{ href: "/search" }],
     },
+
     {
-      key: "heart",
+      key: "favorites",
       icon: <HearthIcon />,
-      modal: [{ button: "" }],
+      modal: {
+        type: "favorite",
+        buttons: [{ action: () => console.log("Favorite modal action") }],
+      },
     },
     {
-      key: "shop",
+      key: "cart",
       icon: <ShopIcon />,
-      modal: [{ button: "" }],
+      links: [{ href: "/cart" }],
     },
   ],
   brand: {

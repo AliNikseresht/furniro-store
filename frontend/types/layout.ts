@@ -8,10 +8,12 @@ export type TLayoutData = {
   }[];
   userActions: {
     key: string;
-    icon: ReactElement;
-    modal: {
-      button: string;
-    }[];
+    icon: React.ReactElement;
+    modal?: {
+      type: "search" | "favorite";
+      buttons: { action: () => void }[];
+    };
+    links?: { href: string }[];
   }[];
   brand: {
     name: string;
