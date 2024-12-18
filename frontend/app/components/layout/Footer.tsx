@@ -5,7 +5,7 @@ import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
-  const static_footer_data = useAppSelector((state) => state.dataReduser);
+  const static_footer_data = useAppSelector((state) => state.dataReducer);
 
   return (
     <footer className="border-t border-[#9F9F9F] px-4 py-3 md:px-8 md:py-6">

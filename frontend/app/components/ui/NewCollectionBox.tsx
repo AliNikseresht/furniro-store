@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 
 const NewCollectionBox = () => {
-  const static_data = useAppSelector((state) => state.dataReduser);
+  const static_data = useAppSelector((state) => state.dataReducer);
 
   return (
     <div className="hidden md:block absolute top-52 right-52 w-[33rem] p-6 rounded bg-[#FFF3E3]">

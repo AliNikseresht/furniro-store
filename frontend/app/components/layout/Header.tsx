@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState } from "react";
 import LogoComponent from "./HeaderComponents/LogoComponent";
 import NavbarComponent from "./HeaderComponents/NavbarComponent";
@@ -8,6 +9,7 @@ import NavbarMobile from "./HeaderComponents/NavbarMobile";
 import CloseGrayIcon from "../icons/CloseGrayIcon";
 
 const Header = () => {
+  //state
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -15,7 +17,7 @@ const Header = () => {
   };
 
   return (
-    <div className="flex items-center justify-between px-4 py-3 md:px-8 md:py-6">
+    <div className="flex items-center justify-between px-4 py-3 md:px-8 md:py-6 sticky top-0 bg-[#fff] z-20">
       <LogoComponent />
       <NavbarComponent />
       <UserActionsComponent />
@@ -24,7 +26,7 @@ const Header = () => {
       </button>
 
       <div
-        className={`fixed top-0 right-0 h-full bg-white shadow-lg p-4 w-3/4 z-50 transform transition-transform duration-300 ${
+        className={`fixed top-0 right-0 h-full bg-[#fff] shadow-lg p-4 w-3/4 z-50 transform transition-transform duration-300 ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >

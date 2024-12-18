@@ -6,7 +6,7 @@ import { useAppSelector } from "@/store/store";
 
 const AboutSection = () => {
   //state
-  const static_data = useAppSelector((state) => state.dataReduser);
+  const static_data = useAppSelector((state) => state.dataReducer);
 
   // hooks
   const pathname = usePathname();

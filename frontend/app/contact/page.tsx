@@ -14,7 +14,7 @@ type FormValues = {
 };
 
 const ContactPage = () => {
-  const static_contact_data = useAppSelector((state) => state.dataReduser);
+  const static_contact_data = useAppSelector((state) => state.dataReducer);
 
   const {
     register,

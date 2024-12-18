@@ -2,7 +2,7 @@ import { useAppSelector } from "@/store/store";
 import React from "react";
 
 const UserActionsComponent = () => {
-  const static_actions_data = useAppSelector((state) => state.dataReduser);
+  const static_actions_data = useAppSelector((state) => state.dataReducer);
 
   return (
     <ul className="hidden md:flex items-center md:gap-3 lg:gap-7">

@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 
 const NavbarMobile = () => {
-  const static_navbar_data = useAppSelector((state) => state.dataReduser);
+  const static_navbar_data = useAppSelector((state) => state.dataReducer);
 
   return (
     <ul className="flex flex-col items-end gap-3.5">

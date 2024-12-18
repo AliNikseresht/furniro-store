@@ -15,7 +15,7 @@ import Tabs from "@/app/components/ui/Tabs";
 import { useAppSelector } from "@/store/store";
 
 const ProductPage = () => {
-  const tabsData = useAppSelector((state) => state.dataReduser.tabsData);
+  const tabsData = useAppSelector((state) => state.dataReducer.tabsData);
 
   // state
   const [selectedSize, setSelectedSize] = useState<string | null>(null);
@@ -45,7 +45,7 @@ const ProductPage = () => {
   return (
     <div className="flex justify-center flex-col items-center w-full">
       {product ? (
-        <div className="md:mt-4 flex flex-col md:flex-row justify-between md:w-[55rem]">
+        <div className="md:mt-4 flex flex-col md:flex-row justify-between md:w-[55rem] mb-6">
           {product.Image?.formats?.thumbnail?.url ? (
             <Image
               src={`${product.Image.formats.thumbnail.url}`}
@@ -164,6 +164,7 @@ const ProductPage = () => {
       ) : (
         <p>No product found.</p>
       )}
+      <Tabs tabs={tabsData} initialActiveTabId="description" />
 
       <div className="flex items-center flex-col w-full p-4 gap-2 border-t my-7">
         <h3 className="text-[#000] font-bold text-xl md:text-3xl">
@@ -177,8 +178,6 @@ const ProductPage = () => {
           Show More
         </Link>
       </div>
-
-      <Tabs tabs={tabsData} initialActiveTabId="description" />
     </div>
   );
 };

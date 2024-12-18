@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 
 const NavbarComponent = () => {
-  const static_navbar_data = useAppSelector((state) => state.dataReduser);
+  const static_navbar_data = useAppSelector((state) => state.dataReducer);
 
   return (
     <ul className="hidden md:flex items-center md:gap-6 lg:gap-20">

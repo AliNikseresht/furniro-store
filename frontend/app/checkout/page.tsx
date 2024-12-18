@@ -12,7 +12,7 @@ interface FormData {
 
 const CheckoutPage = () => {
   //state
-  const static_checkout_data = useAppSelector((state) => state.dataReduser);
+  const static_checkout_data = useAppSelector((state) => state.dataReducer);
 
   //hooks
   const {

@@ -7,6 +7,7 @@ export type TLayoutData = {
     link: string;
   }[];
   userActions: {
+    key: string;
     icon: ReactElement;
     modal: {
       button: string;

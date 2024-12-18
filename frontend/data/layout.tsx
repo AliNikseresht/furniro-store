@@ -29,18 +29,22 @@ export const layoutData: TLayoutData = {
   ],
   userActions: [
     {
+      key: "user",
       icon: <UserIcon />,
       modal: [{ button: "" }],
     },
     {
+      key: "search",
       icon: <SearchIcon />,
       modal: [{ button: "" }],
     },
     {
+      key: "heart",
       icon: <HearthIcon />,
       modal: [{ button: "" }],
     },
     {
+      key: "shop",
       icon: <ShopIcon />,
       modal: [{ button: "" }],
     },
