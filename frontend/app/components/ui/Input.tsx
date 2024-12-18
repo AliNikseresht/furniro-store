@@ -9,7 +9,7 @@ interface InputProps<T extends FieldValues> {
   as?: "input" | "textarea";
   rows?: number;
   className?: string;
-  [key: string]: any;
+  [key: string]: unknown;
 }
 
 const Input = <T extends FieldValues>({

@@ -50,6 +50,7 @@ const CheckoutPage = () => {
           </div>
 
           <Input
+            key="additionalInfo"
             name="additionalInfo"
             label="Additional Information"
             as="textarea"
